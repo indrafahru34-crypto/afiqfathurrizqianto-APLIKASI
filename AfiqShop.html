@@ -96,17 +96,17 @@
   <div class="container">
     <header>
       <div class="brand">
-        <div class="logo">TG</div>
+        <div class="logo">AS</div>
         <div>
-          <div class="site-name">AfiqShop<span style="color:var(--accent);">Top up</span></div>
+          <div class="site-name">AfiqShop<span style="color:var(--accent);"> Topup</span></div>
           <div class="muted" style="font-size:12px">Cepat • Aman • Terpercaya</div>
         </div>
       </div>
 
       <nav>
-        <a href="#">Beranda</a>
-        <a href="#">Paket</a>
-        <a href="#">Promo</a>
+        <a href="AfiqShop.html">Beranda</a>
+        <a href="paket.html">Paket</a>
+        <a href="depo.html">Deposit</a>
         <a href="#">Bantuan</a>
       </nav>
 
@@ -117,7 +117,7 @@
           <button class="ghost" onclick="applySearch()">Cari</button>
         </div>
 
-        <div class="pill">Saldo: <strong style="margin-left:6px">Rp 120.000</strong></div>
+        <div class="pill">Saldo: <strong style="margin-left:6px">Rp 1.000.000</strong></div>
       </div>
     </header>
 
@@ -176,18 +176,18 @@
     </main>
 
     <footer>
-      © 2025 TopUp Game • Dibuat sebagai contoh modern UI • Made with ❤️
+      © 2025 TopUp Game • Dibuat oleh AfiqShop
     </footer>
   </div>
 
   <script>
     const products = [
-      {id:1,title:'PUBG Mobile — 60 UC',price:12000,tag:'mobile',img:'https://www.google.com/imgres?q=foto%20pubg&imgurl=https%3A%2F%2Fwww.acerid.com%2Fwp-content%2Fuploads%2F2019%2F07%2FGame-Online-PUBG-thumbnail.jpg&imgrefurl=https%3A%2F%2Fwww.acerid.com%2Fpredator%2Fdibalik-sukses-game-online-pubg&docid=1P6sGpI9yqIheM&tbnid=_IG2RrmORzS1fM&vet=12ahUKEwij8ryJyPGPAxVNS3ADHfp5PQsQM3oECBsQAA..i&w=1440&h=953&hcb=2&ved=2ahUKEwij8ryJyPGPAxVNS3ADHfp5PQsQM3oECBsQAA'},
-      {id:2,title:'Mobile Legends — 86 Diamonds',price:25000,tag:'mobile',img:'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=200&q=60'},
-      {id:3,title:'Free Fire — 210 Diamonds',price:50000,tag:'mobile',img:'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=200&q=60'},
-      {id:4,title:'Steam Wallet 50k',price:50000,tag:'pc',img:'https://images.unsplash.com/photo-1526378728687-802a3a5b5f3b?auto=format&fit=crop&w=200&q=60'},
-      {id:5,title:'Valorant Points 1000',price:100000,tag:'pc',img:'https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=200&q=60'},
-      {id:6,title:'Voucher Google Play 50k',price:50000,tag:'voucher',img:'https://images.unsplash.com/photo-1605902711622-cfb43c44367e?auto=format&fit=crop&w=200&q=60'}
+      {id:1,title:'PUBG Mobile — 60 UC',price:12000,tag:'mobile',img:'download.jpeg'},
+      {id:2,title:'Mobile Legends — 86 Diamonds',price:25000,tag:'mobile',img:'b/unnamed.png'},
+      {id:3,title:'Free Fire — 210 Diamonds',price:50000,tag:'mobile',img:'b/ff.jpeg'},
+      {id:4,title:'Steam Wallet 50k',price:50000,tag:'pc',img:'b/wallet.jpeg'},
+      {id:5,title:'Valorant Points 1000',price:100000,tag:'pc',img:'b/valoran.jpeg'},
+      {id:6,title:'Voucher Google Play 50k',price:50000,tag:'voucher',img:'b/play.jpeg'}
     ];
 
     const cart = [];
@@ -277,7 +277,7 @@
       const names = cart.map(c=>`${c.qty} x ${c.title}`).join('\n');
       const r = confirm(`Checkout:\n${names}\n\nTotal: ${total}\n\nLanjutkan ke pembayaran?`);
       if(r){
-        alert('Terima kasih! Pembayaran sedang diproses — ini hanya demo.');
+        alert('Terima kasih! Pembayaran sedang diproses, sabar bosku😘.');
         clearCart();
       }
     }
